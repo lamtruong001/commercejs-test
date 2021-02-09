@@ -27,7 +27,7 @@ function IndexPage({ products }) {
         <title>ChopChop</title>
       </Head>
       <div className="md:min-h-screen md:flex md:items-center">
-        <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-10">
+        <div className="flex flex-col w-full md:flex-row space-y-3 md:space-y-0 md:space-x-10">
           <div className="md:max-h-screen md:w-1/2 flex items-end justify-between md:sticky md:top-0">
             <Header />
 
