@@ -24,7 +24,7 @@ function IndexPage({ products }) {
   return (
     <>
       <Head>
-        <title>ChopChop</title>
+        <title>Poly</title>
       </Head>
       <div className="md:min-h-screen md:flex md:items-center">
         <div className="flex flex-col w-full md:flex-row space-y-3 md:space-y-0 md:space-x-10">
@@ -43,11 +43,11 @@ function IndexPage({ products }) {
               }}
               exit={{ opacity: 0, y: -50 }}
             >
-              <h1 className="font-serif italic text-xl md:text-3xl">Shop:</h1>
+            
+            <p className="text-2xl w-11/12 pb-20">Sculpted with love, these low polygon animals are made to last. We went back 
+              and forth for months deliberating on materials, size and price to deliver 
+              centre piece for your living room.</p>
 
-              <div className="pt-3">
-                <ProductList products={products} />
-              </div>
             </motion.div>
           </div>
 

@@ -23,39 +23,11 @@ function Footer() {
         
         <div className="w-full md:w-1/3">
           <div className="md:text-right space-x-1">
-            <Link href="/">
-              <a className="text-black">Shop</a>
-            </Link>
-            ,
             <a
-              href="https://github.com/chec/commercejs-chopchop-demo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black"
+              className="inline-flex items-center space-x-1 text-faded-black hover:text-black transition-colors"
             >
-              About
+              <LogoSVG className="h-8"/>
             </a>
-            ,
-            <a
-              href="https://twitter.com/commercejs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black"
-            >
-              Contact
-            </a>
-            ,
-            <Link href="/">
-              <a className="text-black">Legal</a>
-            </Link>
-            ,
-            <Link href="/">
-              <a className="text-black">Privacy</a>
-            </Link>
-            ,<span>&copy; 2021</span>
-            <p className="hidden md:block italic font-serif">
-              Fine tools for thoughtful cooks
-            </p>
           </div>
         </div>
       </div>
