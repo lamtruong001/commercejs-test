@@ -14,8 +14,9 @@ const buttonStyle = (theme) => {
       return "bg-asparagus text-black";
     case "ceramic-dutch-oven-chopchop-shop":
       return "bg-goldenrod text-black";
-    default:
-      return "bg-white-rock";
+
+     default:
+      return "bg-blue-600 text-white";
   }
 };
 
@@ -23,7 +24,7 @@ function Button({ className, ...props }) {
   const theme = useThemeState();
 
   const buttonClass = cc([
-    "appearance-none border-none py-0.5 px-1.5 md:px-2 text-lg md:text-xl rounded transition focus:outline-none",
+    "appearance-none border-none py-2 px-8 md:px-8 text-lg md:text-xl rounded transition focus:outline-none",
     buttonStyle(theme),
     className,
   ]);

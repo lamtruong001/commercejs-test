@@ -10,7 +10,7 @@ function VariantPicker({ variants = [], defaultValues = {}, ...props }) {
       {variants.map(({ options, ...variant }) => (
         <div
           key={variant.id}
-          className="rounded border border-black relative w-32 overflow-hidden"
+          className="rounded border border-grey relative w-48 p-2 overflow-hidden"
         >
           <label htmlFor={variant.id} className="sr-only">
             {variant.name}:
