@@ -4,20 +4,26 @@ import LogoSVG from "../svg/polylogo.svg";
 
 function Header() {
   return (
-    <header className="md:absolute md:left-0 md:top-0 w-full z-10">
-      <div className="py-3 lg:py-5 flex items-center">
-        <Link href="/">
-          <a title="Return to Poly">Shop</a>
-        </Link>
-        <span className="pr-1">,</span>
-        <CartSummary className = "text-right"/>
+    <header className="fixed md:absolute md:max-h-screen items-end 
+    justify-between w-full auto-cols-auto h-20 z-40 bg-gradient-to-b from-white md:bg-none">
+      <div className="pt-6 pr-6 lg:pb-12 flex-col h-8">
+        <div className="float-left md:block">
+          <Link href="/">
+          <a title="Return to Poly">Home</a>
+          </Link>
+        </div>
+        <div className="float-right md:block">
+          <CartSummary className = "text-right"/>
+        </div>
       </div>
 
-      <Link href="/">
+      <div className="fixed w-1/2 md:w-2/5 md:pr-28 lg:w-2/5 xl:w-2/5 pt-9 lg:pt-0 md:block">
+        <Link href="/">
         <a title="Return to Poly">
-          <LogoSVG className="w-10/12" />
+          <LogoSVG/>
         </a>
       </Link>
+      </div>
     </header>
   );
 }
