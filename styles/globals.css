@@ -1,0 +1,8 @@
+model-viewer {
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffff;
+    --poster-color: #ffffff;
+    padding-bottom: 10px;
+  }
+
