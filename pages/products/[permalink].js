@@ -16,6 +16,7 @@ import ProductAttributes from "../../components/ProductAttributes";
 import RelatedProducts from "../../components/RelatedProducts";
 
 import dynamic from 'next/dynamic';
+import Accordion from "../../components/Accordion";
 
 
 const Model = dynamic(
@@ -121,12 +122,12 @@ function ProductPage({ product }) {
         <div className="hidden md:block">
             <Header />
             </div>
-          <div className="md:max-h-screen md:w-1/2 flex flex-col md:flex-row items-end justify-between md:sticky md:top-0 md:pr-10">
+          <div className="md:max-h-screen md:w-1/2 flex md:flex-row items-end justify-between md:sticky md:top-0 md:pr-10">
           
           
 
             <motion.div
-              className="py-6 md:py-12 sticky top-0"
+              className="py-12 pb-24 sticky top-0"
               initial={{ opacity: 0, y: 50 }}
               animate={{
                 opacity: 1,
@@ -137,7 +138,7 @@ function ProductPage({ product }) {
               }}
               exit={{ opacity: 0, y: -50 }}
             >
-              <h1 className="font-serif font-medium text-2xl md:text-4xl lg:text-5xl">
+              <h1 className="font-serif font-bold text-2xl md:text-4xl lg:text-5xl pb-0 md:pb-4">
                 {product.name}
               </h1>
 
@@ -156,7 +157,7 @@ function ProductPage({ product }) {
                   />
                 </div>
 
-                <Button onClick={addToCart}>Add to Bag</Button>
+                <Button onClick={addToCart}>Add to Cart</Button>
               </div>
 
               <div
@@ -166,7 +167,7 @@ function ProductPage({ product }) {
             </motion.div>
           </div>
 
-          <div className="md:min-h-screen md:py-12 flex items-center md:w-1/2">
+          <div className="md:min-h-screen pb-0 md:pt-16 md:pb-24 flex items-center md:w-1/2">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -175,12 +176,13 @@ function ProductPage({ product }) {
               <Model src={"/models/" + product.name + ".gltf"} ios={"/models/" + product.name + ".usdz"}/>
               <ProductImages images={images} />
               <ProductAttributes {...meta} />
+              <Accordion/>
             </motion.div>
           </div>
         </div>
       </div>
 
-      <div className="py-3 md:py-4 lg:py-8">
+      <div className="py-8 border-t border-white">
         <RelatedProducts products={related_products} />
       </div>
     </React.Fragment>

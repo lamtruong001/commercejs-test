@@ -48,7 +48,7 @@ function ExtraFieldsForm() {
             Lesson Plan
           </legend>
 
-          <p className="text-black text-sm italic font-serif font-medium mb-3">
+          <p className="text-black text-sm italic font-serif font-bold font-medium mb-3">
             Thanks for joining us for a lesson! Let us know what you might like
             to learn or cook below.
           </p>

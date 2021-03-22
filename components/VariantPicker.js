@@ -6,11 +6,11 @@ function VariantPicker({ variants = [], defaultValues = {}, ...props }) {
   if (!variants || variants.length === 0) return null;
 
   return (
-    <div className="space-x-2 md:flex">
+    <div className="md:flex">
       {variants.map(({ options, ...variant }) => (
         <div
           key={variant.id}
-          className="rounded border border-grey relative w-48 p-2 overflow-hidden"
+          className="rounded border border-grey relative w-46 overflow-hidden p-2 pr-6 bg-transparent"
         >
           <label htmlFor={variant.id} className="sr-only">
             {variant.name}:
@@ -19,7 +19,7 @@ function VariantPicker({ variants = [], defaultValues = {}, ...props }) {
           <select
             id={variant.id}
             defaultValue={defaultValues[variant.id]}
-            className="appearance-none leading-none block w-full py-1 pr-6 pl-2"
+            className="appearance-none leading-none block w-full p-2 pr-6 bg-transparent"
             {...props}
           >
             {options.map((option) => (
@@ -29,8 +29,8 @@ function VariantPicker({ variants = [], defaultValues = {}, ...props }) {
             ))}
           </select>
 
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-black">
-            <Chevron />
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-black">
+            <Chevron/>
           </div>
         </div>
       ))}

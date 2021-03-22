@@ -49,7 +49,7 @@ function CartItem({ id, media, name, quantity, line_total, variants }) {
       );
 
   return (
-    <div className="py-3 md:py-4 lg:py-5 flex md:items-end space-x-3 md:space-x-4 lg:space-x-5 border-b border-black">
+    <div className="py-3 md:py-4 lg:py-5 flex md:items-end space-x-3 md:space-x-4 lg:space-x-5 border-b border-white">
       <div className="w-24 h-24 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded relative">
         <Image
           src={media.source}
@@ -62,7 +62,7 @@ function CartItem({ id, media, name, quantity, line_total, variants }) {
       </div>
       <div className="flex flex-col md:flex-row md:items-end flex-grow">
         <div className="md:flex-grow">
-          <p className="font-serif text-xl md:text-2xl lg:text-3xl italic leading-none">
+          <p className="font-sans text-xl md:text-2xl lg:text-2xl font-medium leading-none">
             {name}
           </p>
           {hasVariants && (
@@ -99,7 +99,7 @@ function CartItem({ id, media, name, quantity, line_total, variants }) {
             <div>
               <button
                 onClick={handleRemoveItem}
-                className="appearance-none inline-flex items-center justify-center rounded-lg border border-black text-xs text-black px-1 h-5 opacity-50 hover:opacity-100 focus:opacity-100 focus:outline-none transition"
+                className="appearance-none inline-flex items-center justify-center rounded-lg text-red p-2 h-5 bg-red bg-opacity-0 transition duration-300 hover:bg-opacity-10"
               >
                 Remove
               </button>

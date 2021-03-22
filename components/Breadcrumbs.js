@@ -6,7 +6,7 @@ function Breadcrumbs({ inCart }) {
   const { currentStep, extrafields } = useCheckoutState();
 
   if (inCart) {
-    return <span className="text-lg md:text-xl">Shopping Bag</span>;
+    return <span className="text-lg md:text-xl">Shopping Cart</span>;
   }
 
   if (currentStep === "success") {
@@ -17,7 +17,7 @@ function Breadcrumbs({ inCart }) {
     <div className="space-x-3">
       {currentStep === "extrafields" && (
         <>
-          <span className="text-lg md:text-xl">Shopping Bag</span>
+          <span className="text-lg md:text-xl">Shopping Cart</span>
           <span className="text-lg md:text-xl">&rarr;</span>
           <span className="text-lg md:text-xl">Booking</span>
           <span className="text-lg md:text-xl opacity-50">&rarr;</span>
@@ -28,7 +28,7 @@ function Breadcrumbs({ inCart }) {
       )}
       {currentStep === "shipping" && (
         <>
-          <span className="text-lg md:text-xl">Shopping Bag</span>
+          <span className="text-lg md:text-xl">Shopping Cart</span>
 
           {extrafields.length > 0 && (
             <>
@@ -44,7 +44,7 @@ function Breadcrumbs({ inCart }) {
       )}
       {currentStep === "billing" && (
         <>
-          <span className="text-lg md:text-xl">Shopping Bag</span>
+          <span className="text-lg md:text-xl">Shopping Cart</span>
           {extrafields.length > 0 && (
             <>
               <span className="text-lg md:text-xl">&rarr;</span>

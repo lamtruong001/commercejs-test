@@ -5,7 +5,7 @@ function RelatedProducts({ products }) {
 
   return (
     <div>
-      <h3 className="w-1/3 md:w-full leading-tight md:leading-normal font-serif text-xl md:text-3xl">
+      <h3 className="w-1/2 md:w-full leading-tight md:leading-normal font-sans font-medium text-xl md:text-3xl">
         Some other things you might like
       </h3>
 

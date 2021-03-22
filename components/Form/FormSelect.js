@@ -19,12 +19,12 @@ function FormSelect({
 
   return (
     <div className="py-2">
-      <div className="relative overflow-hidden border border-faded-black focus:border-black focus:outline-none rounded-md w-full">
+      <div className="relative overflow-hidden border border-grey focus:border-blue focus:outline-none rounded-md w-full">
         <select
           ref={register({ required: isRequired, ...validation })}
           id={name}
           name={name}
-          className="appearance-none bg-transparent w-full py-1 pr-6 pl-1.5 text-base placeholder-faded-black focus:outline-none"
+          className="appearance-none bg-transparent w-full py-2 pr-6 pl-1.5 text-base placeholder-faded-black focus:outline-none"
           defaultValue=""
           {...props}
         >

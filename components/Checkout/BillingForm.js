@@ -20,7 +20,7 @@ const style = {
     },
     color: "#150703",
     fontSize: "16px",
-    fontFamily: `Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+    fontFamily: `DM Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
     iconColor: "#6B7280",
   },
 };
@@ -82,7 +82,7 @@ function BillingForm() {
 
           {collects?.shipping_address && (
             <FormCheckbox
-              label="Same as shipping address"
+            label="Same as shipping address"
               name="billingIsShipping"
               onChange={({ target: { checked } }) =>
                 checked && setValue("billing", shipping)
@@ -122,7 +122,7 @@ function BillingForm() {
             <div>
               <CardNumberElement
                 options={{ style }}
-                className="appearance-none bg-transparent placeholder-faded-black border border-faded-black focus:border-black focus:outline-none rounded-md w-full p-1.5"
+                className="appearance-none bg-transparent placeholder-faded-black border border-grey focus:border-blue focus:outline-none rounded-md w-full p-1.5"
                 onChange={onStripeChange}
               />
             </div>
@@ -132,14 +132,14 @@ function BillingForm() {
                 <CardExpiryElement
                   options={{ style }}
                   placeholder="Expiry"
-                  className="appearance-none bg-transparent placeholder-faded-black border border-faded-black focus:border-black focus:outline-none rounded-md w-full p-1.5"
+                  className="appearance-none bg-transparent placeholder-faded-black border border-grey focus:border-blue focus:outline-none rounded-md w-full p-1.5"
                   onChange={onStripeChange}
                 />
               </div>
               <div className="w-1/2">
                 <CardCvcElement
                   options={{ style }}
-                  className="appearance-none bg-transparent placeholder-faded-black border border-faded-black focus:border-black focus:outline-none rounded-md w-full p-1.5"
+                  className="appearance-none bg-transparent placeholder-faded-black border border-grey focus:border-blue focus:outline-none rounded-md w-full p-1.5"
                   onChange={onStripeChange}
                 />
               </div>

@@ -26,6 +26,11 @@ function IndexPage({ products }) {
     <>
       <Head>
         <title>Poly</title>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+        <link rel="icon" type="image/svg+xml" href="../favicon/favicon-mix.svg"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://use.typekit.net/ygm3cgz.css"></link>
       </Head>
       <div className="md:min-h-screen md:flex md:items-center">
         <div className="flex flex-col w-full md:flex-row space-y-3 md:space-y-0 md:space-x-10">
@@ -55,7 +60,7 @@ function IndexPage({ products }) {
 
           
           <motion.div
-            className="md:min-h-screen py-44 md:py-16 flex items-center md:w-1/2 md:z-0"
+            className="md:min-h-screen pt-44 md:pt-16 pb-24 flex items-center md:w-1/2 md:z-0"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}

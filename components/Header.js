@@ -5,11 +5,11 @@ import LogoSVG from "../svg/polylogo.svg";
 function Header() {
   return (
     <header className="fixed md:absolute md:max-h-screen items-end 
-    justify-between w-full auto-cols-auto h-20 z-40 bg-gradient-to-b from-white md:bg-none">
+    justify-between w-full auto-cols-auto h-20 z-40 bg-gradient-to-b from-white via-dirty-white to-transparent md:bg-none">
       <div className="pt-6 pr-6 lg:pb-12 flex-col h-8">
         <div className="float-left md:block">
           <Link href="/">
-          <a title="Return to Poly">Home</a>
+          <a title="Return to Poly" class="font-medium text-lg">Home</a>
           </Link>
         </div>
         <div className="float-right md:block">

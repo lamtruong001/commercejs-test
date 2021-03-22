@@ -16,7 +16,7 @@ const buttonStyle = (theme) => {
       return "bg-goldenrod text-black";
 
      default:
-      return "bg-blue-600 text-white";
+      return "bg-blue text-white";
   }
 };
 
@@ -24,7 +24,7 @@ function Button({ className, ...props }) {
   const theme = useThemeState();
 
   const buttonClass = cc([
-    "appearance-none border-none py-2 px-8 md:px-8 text-lg md:text-xl rounded transition focus:outline-none",
+    "appearance-none border-none py-2 px-8 md:px-8 text-lg md:text-xl rounded shadow:sm transition duration-300 ease-in-out bg-blue transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl",
     buttonStyle(theme),
     className,
   ]);

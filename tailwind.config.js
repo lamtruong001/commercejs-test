@@ -5,15 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        clementine: "#EF7300",
-        tumbleweed: "#D9A876",
-        "hawkes-blue": "#C7DDFD",
-        asparagus: "#789750",
-        goldenrod: "#FFCE70",
-        black: "#150703",
-        "faded-black": "rgba(21,7,3,0.6)",
-        "ecru-white": "#FAF8F3",
-        "white-rock": "#E8E0CF",
+        blue: "#2563EB",
+        black: "#353535",
+        red: "#EF4444",
+        "off-white": "#FAFAFA",
+        "dirty-white": "#F2F2F2",
+        "faded-black": "#353535",
+        
       },
       height: {
         112: "28rem",
@@ -26,9 +24,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
       // serif: ["'EB Garamond'", ...defaultTheme.fontFamily.serif],
-      serif: ["Inter", ...defaultTheme.fontFamily.sans],
+      serif: ["Dystopian", ...defaultTheme.fontFamily.sans],
+      headline: ["Dystopian", ...defaultTheme.fontFamily.sans],
       
     },
   },
