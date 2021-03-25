@@ -8,13 +8,13 @@ function Model (path) {
     src={path.src}
     ios-src={path.ios}
     // alt="A 3D model of an astronaut"
-    ar-modes
+    ar 
+    ar-modes="webxr scene-viewer quick-look"
     shadow-intensity="0.2"
     shadow-softness="0.5"
     camera-controls
     max-camera-orbit="auto 100deg auto"
     auto-rotate
-    ar
   ></model-viewer>
 </div>
 );
