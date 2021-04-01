@@ -156,12 +156,10 @@ function ProductPage({ product }) {
                     onChange={handleVariantChange}
                   />
                 </div>
-
                 <Button onClick={addToCart}>Add to Cart</Button>
               </div>
-
               <div
-                className="pt-5 md:pt-8 lg:pt-10 md:leading-relaxed lg:leading-loose lg:text-lg"
+                className="py-5 md:py-8 md:leading-relaxed lg:leading-loose lg:text-lg"
                 dangerouslySetInnerHTML={{ __html: product.description }}
               />
             </motion.div>

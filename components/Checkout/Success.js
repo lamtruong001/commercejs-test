@@ -20,21 +20,21 @@ function Success({ has }) {
               src="/checkout/doesntexist.svg"
               width={384}
               height={126}
-              alt="ChopChop doesn't exist!"
+              alt="Poly doesn't exist!"
               layout="responsive"
             />
           </div>
 
           <div className="p-4 pt-0 -mt-4 leading-tight font-sans">
-            <p>...if it did, we'd offer you a <span className="font-serif">100% real store credit</span>, but since it doesn't, we'd love for you to check out <a href="https://commercejs.com" target="_blank" rel="noopener nofollow" className="font-serif underline">commercejs.com</a> and <a href="https://github.com/chec/commercejs-chopchop-demo" target="_blank" rel="noopener nofollow" className="font-serif underline">the repo</a> for this store instead.</p>
+            <p>...if it did, we'd offer you a 100% real store credit, but since it doesn't, we hope you at least had a great shopping experience!</p>
             <div className="mt-6 mb-1 font-serif flex justify-between items-end">
               <Image
-                src="/product-attributes/thanks.svg"
+                src="/ckeckout/thanks.svg"
                 width={110}
                 height={48}
                 alt="Thanks for visiting"
               />
-              <span className="ml-4 text-sm">'Chop chop' what are you waiting for</span>
+              <span className="ml-4 text-sm">Thanks again for visiting!</span>
             </div>
           </div>
         </div>

@@ -6,11 +6,11 @@ function Accordion () {
         Product details
       </summary>
       <div className= "rounded box">
-      <strong>Dimensions:</strong> L: 40 x W: 40 cm H: 60 cm
+      <strong>Dimensions:</strong> L: 20 x W: 20 cm H: 35 cm
       <br/>
-        <strong>Materials:</strong> One piece material based on chosen colour
+        <strong>Materials:</strong> High quality sustainable polymer
         <br/>
-        <strong>Colours:</strong> Black Onlyx, Pure Marble, Copper Skillet, Sunset Gold
+        <strong>Colours:</strong> Matte Black, but more colour ways comming soon!
         <br/>
         <strong>Product warranty:</strong> 2 years
       </div>
@@ -26,7 +26,7 @@ function Accordion () {
             <img className="absolute top-0 left-0 bg-cover object-fit object-cover" src="https://picsum.photos/id/646/200/200" alt="Profile picture"/>  
           </div>
           <div className= "inline-block">
-              <em>"Lorem ipsum solor dos sit amet. Silur dolor amet papyrus colori."</em>
+              <em>"I couldn't believe how well is this piece of decoration made. Absolutely one of my favourite design pieces so far!"</em>
               <br/>
               <strong>Naomi Campbell</strong>
             </div>

@@ -19,7 +19,7 @@ function FormTextarea({
         ref={register({ required: isRequired, ...validation })}
         id={name}
         name={name}
-        className="appearance-none bg-transparent placeholder-faded-black border border-grey focus:border-blue focus:outline-none rounded-md w-full text-base px-1.5 py-1"
+        className="appearance-none bg-transparent placeholder-faded-black border border-grey focus:border-blue focus:outline-none rounded-md w-full text-base p-2"
         {...props}
       />
       <FormError name={name} />
