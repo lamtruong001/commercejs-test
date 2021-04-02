@@ -50,7 +50,9 @@ function IndexPage({ products }) {
               }}
               exit={{ opacity: 0, y: -50 }}
             >
-            
+             <h1 className="font-serif font-bold text-2xl md:text-4xl lg:text-5xl pb-0 md:pb-4">
+                Welcome
+              </h1>
             <p className="text-xl w-10/12 pb-20">Sculpted with love, these low polygon animals are made to last. We went back 
               and forth for months deliberating on materials, size and price to deliver 
               centre piece for your living room.</p>
