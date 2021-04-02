@@ -15,7 +15,7 @@ function Success({ has }) {
       </div>
       <div className="lg:w-1/2 lg:flex lg:items-center lg:justify-center">
         <div className="bg-white shadow-thank-you transform -rotate-25 skew-y-12 mx-auto my-24 lg:mt-48 max-w-lg">
-          <div className="ml-4">
+          <div className="p-4">
             <Image
               src="/checkout/doesntexist.svg"
               width={384}
@@ -29,12 +29,12 @@ function Success({ has }) {
             <p>...if it did, we'd offer you a 100% real store credit, but since it doesn't, we hope you at least had a great shopping experience!</p>
             <div className="mt-6 mb-1 font-serif flex justify-between items-end">
               <Image
-                src="/ckeckout/thanks.svg"
-                width={110}
+                src="/ckeckout/favicon-blue.svg"
+                width={48}
                 height={48}
-                alt="Thanks for visiting"
+                alt="Poly icon"
               />
-              <span className="ml-4 text-sm">Thanks again for visiting!</span>
+              <span className="ml-4 text-sm">Thanks for visiting!</span>
             </div>
           </div>
         </div>
