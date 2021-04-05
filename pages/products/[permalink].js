@@ -111,6 +111,11 @@ function ProductPage({ product }) {
       <Head>
         <title>{product.seo.title}</title>
         <meta name="description" content={product.seo.description}></meta>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
+        <link rel="icon" type="image/svg+xml" href="../favicon/favicon-mix.svg"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://use.typekit.net/ygm3cgz.css"></link>
       </Head>
 
       <div className="md:hidden z-40">
