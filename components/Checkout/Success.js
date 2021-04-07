@@ -30,11 +30,11 @@ function Success({ has }) {
             <p>...if it did, we'd offer you a 100% real store credit, but since it doesn't, we hope you at least had a great shopping experience!</p>
             <div className="mt-6 mb-1 font-serif flex justify-between items-end">
               <Image
-                src="/ckeckout/favicon-mix.svg"
+                src="/checkout/favicon-mix.svg"
                 width={48}
                 height={48}
                 alt="Poly icon"
-                layout="responsive"
+                // layout="responsive"
               />
               <span className="ml-4 text-sm">Thanks for visiting!</span>
             </div>
