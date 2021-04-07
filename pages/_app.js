@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <meta name="description" content="Fine tools for thoughtful cooks"></meta>
+        <meta name="description" content="Fill your space with Poly"></meta>
       </Head>
       <Elements
         stripe={stripePromise}
@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps, router }) {
           fonts: [
             {
               cssSrc:
-                "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+                "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap",
             },
           ],
         }}
